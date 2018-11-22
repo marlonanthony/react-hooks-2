@@ -8,7 +8,7 @@ const App = () => {
       <button onClick={() => setTrigger(!trigger)}>Trigger Update</button>
       <button onClick={() => setMount(!mounted)}>Toggle Mount</button>
 
-      { mounted ? <Position /> : null }
+      { mounted && <Position />}
     </div>
   )
 }
